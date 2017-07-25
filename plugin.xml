@@ -1,0 +1,30 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<plugin id="cordova-watchos-messageapi" version="1.0.0" xmlns="http://apache.org/cordova/ns/plugins/1.0">
+    <name>WatchOS MessageApi</name>
+    <description>A Cordova plugin for the communication with a WatchOS device</description>
+    <author>Smart Community Lab</author>
+    <keywords>WatchOS, iOS, Apple, AppleWatch, Wear, Wearable, Watch, MessageApi, Message, SendMessage, ReceiveMessage</keywords>
+    <license>Apache 2.0</license>
+    <repo>https://github.com/smartcommunitylab/cordova-watchos-messageapi</repo>
+    <issue>https://github.com/smartcommunitylab/cordova-watchos-messageapi/issues</issue>
+
+    <engines>
+        <engine name="cordova" version=">=3.0.0"/>
+        <engine name="apple-ios" version=">=8.2.0"/>
+    </engines>
+    <js-module name="WatchOSApi" src="www/watchos-api.js">
+        <clobbers target="WatchOSApi"/>
+    </js-module>
+    <platform name="ios">
+        <config-file parent="/*" target="config.xml">
+            <feature name="WatchOSApi">
+                <param name="ios-package" value="WatchOSApi"/>
+                <param name="onload" value="true"/>
+            </feature>
+        </config-file>
+        <header-file src="src/ios/WatchOSApi.h"/>
+        <source-file src="src/ios/WatchOSApi.m"/>
+        <framework src="Foundation.framework"/>
+        <framework src="WatchConnectivity.framework"/>
+    </platform>
+</plugin>

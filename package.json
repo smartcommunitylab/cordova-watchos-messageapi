@@ -1,0 +1,46 @@
+{
+  "name": "cordova-watchos-messageapi",
+  "version": "1.0.0",
+  "description": "A Cordova plugin for the communication with a WatchOS device",
+  "cordova": {
+    "id": "cordova-watchos-messageapi",
+    "platforms": [
+      "ios"
+    ]
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/smartcommunitylab/cordova-watchos-messageapi.git"
+  },
+  "keywords": [
+    "WatchOS",
+    "iOS",
+    "Apple",
+    "AppleWatch",
+    "Wear",
+    "Wearable",
+    "Watch",
+    "MessageApi",
+    "Message",
+    "SendMessage",
+    "ReceiveMessage",
+    "ecosystem:cordova",
+    "cordova-ios"
+  ],
+  "engines": [
+    {
+      "name": "cordova",
+      "version": ">=3.0.0"
+    },
+    {
+      "name": "apple-ios",
+      "version": ">=8.2.0"
+    }
+  ],
+  "author": "Smart Community Lab",
+  "license": "Apache 2.0",
+  "bugs": {
+    "url": "https://github.com/smartcommunitylab/cordova-watchos-messageapi/issues"
+  },
+  "homepage": "https://github.com/smartcommunitylab/cordova-watchos-messageapi#readme"
+}
