@@ -1,7 +1,7 @@
 # cordova-watchos-messageapi
 A Cordova plugin for the communication with a WatchOS device. 
 It allows you to send and receive messages from the nodes to which the device is connected.
-The service works also if the application gets killed.
+The plugin works also if the application gets killed.
 
 ## Installation
 With Cordova CLI, from npm:
@@ -59,7 +59,7 @@ function send(msg, success) {
     WatchOSApi.sendMessage(msg, function (){alert("Message send success");}, function (msg){alert("Error" + msg);});
 }
   ```
-###Apple Watch Application
+### Apple Watch Application
 ```objective-c
 #import "InterfaceController.h"
 #import <WatchConnectivity/WatchConnectivity.h>
